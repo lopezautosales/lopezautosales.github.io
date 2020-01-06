@@ -1,0 +1,171 @@
+﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+
+
+html, body, app {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: lightgray;
+}
+
+.navbar {
+    background-color: skyblue;
+    padding: 0 8%;
+    width: 100%;
+}
+
+    .navbar .navbar-brand {
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        margin-left:auto;
+        flex-wrap: wrap;
+    }
+
+        .navbar .navbar-brand img{
+            height: 3em;
+            margin-right: .5em;
+        }
+
+    .navbar .oi {
+        width: 2rem;
+        font-size: 1.1rem;
+        vertical-align: text-top;
+        top: -2px;
+    }
+
+.content {
+    padding: 1% 5%;
+}
+
+    .content h1{
+        text-align: center;
+    }
+
+.btn-toolbar{
+    padding-bottom: 1%;
+    display: block;
+    text-align: center;
+}
+
+    .btn-toolbar .btn-group{
+        display: inline-block;
+    }
+
+.nav-item {
+    margin-right:1%;
+}
+
+    .nav-item a {
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+        .nav-item a.active {
+            background-color: rgba(255,255,255,0.25);
+        }
+
+        .nav-item a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+.navbar-nav {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .navbar-nav .nav-link{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+.jumbotron p{
+    margin-bottom: 0;
+}
+
+.resizable {
+    width: 100%;
+    height: 30em;
+}
+
+    .resizable iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+@media(max-width: 400px){
+    .navbar{
+        padding: 0;
+    }
+
+        .navbar .navbar-nav{
+            flex-direction: column;
+            width: 80%;
+            text-align: center;
+        }
+}
+
+.view{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+    .view .list-header{
+        font-weight: bold;
+    }
+
+    .view .list-group-item{
+        display: inline-block;
+    }
+
+    .view .img-top{
+        max-width: 720px;
+        width: 100%;
+    }
+
+.text-align-left{
+    text-align: left;
+}
+
+.figures{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+    
+    .figures .figure, .figures .figure-img{
+        margin: 0;
+    }
+
+    .figures .btn, .prevnext .btn{
+        padding: 0;
+        margin-bottom: 1em;
+    }
+
+    .figures .figure-caption{
+        color: black;
+    }
+
+footer {
+    margin-bottom: .5em;
+}
+
+    footer p{
+        margin: 0;
+        text-align: center;
+        font-size: small;
+    }
+
+    footer a, footer a:hover, footer a:focus{
+        color: black;
+        text-decoration: none;
+    }
+
+.lastmodified{
+    font-size: x-small;
+    margin-left: 1%;
+}
